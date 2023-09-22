@@ -10,7 +10,7 @@ this.addEventListener("install", (event) => {
       .then((catche) =>
         catche.addAll([
           "/static/js/bundle.js",
-          "/static/js/main.ff9e59bb.js",
+          "/static/js/main.be293e38.js",
           "/static/css/main.300b1910.css",
           "/ogo192.png",
           "/index.html",
@@ -28,9 +28,9 @@ this.addEventListener("fetch", (event) => {
     event.respondWith(
       caches.match(event.request).then((res) => {
         if (res){ return res}
-        // const rerander =event.request.clone();
-        // console.log(rerander);
-        // fetch(rerander)
+        const rerander =event.request.clone();
+        console.log(rerander);
+        fetch(rerander)
       })
     );
   }
