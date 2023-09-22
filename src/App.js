@@ -91,7 +91,7 @@ setApiData(JSON.parse(localStorage.getItem("LocalApiData")))
                 </label>
                 <div className="text-sm">
                   <a
-                    href="#"
+                    href="https://google.com"
                     className="font-semibold text-indigo-600 hover:text-indigo-500"
                   >
                     htmlForgot password?
@@ -122,7 +122,7 @@ setApiData(JSON.parse(localStorage.getItem("LocalApiData")))
           <p className="mt-10 text-center text-sm text-gray-500">
             Not a member?
             <a
-              href="#"
+              href="http://google.com"
               className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500"
             >
               Start a 14 day free trial
