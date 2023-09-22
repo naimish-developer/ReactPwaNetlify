@@ -7,7 +7,7 @@ this.addEventListener("install", (event) => {
   event.waitUntil(
     caches
       .open(CasheDat)
-      .then((catche) =>
+      .then((cache) =>
         cache.addAll([
           "/static/js/bundle.js",
           "/static",
