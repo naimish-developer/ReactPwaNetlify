@@ -10,11 +10,9 @@ this.addEventListener("install", (event) => {
       .then((catche) =>
         catche.addAll([
           "/static/js/bundle.js",
-          "/static/js/main.ff9e59bb.js",
+          "/static/js/main.be293e38.js",
           "/static/css/main.300b1910.css",
-          "/ogo192.png",
           "/index.html",
-          "/",
         ])
       )
       .catch((error) => console.log("Catch Store  Faild", error))
