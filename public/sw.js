@@ -9,11 +9,6 @@ this.addEventListener("install", (event) => {
       .open(CasheDat)
       .then((cache) =>
         cache.addAll([
-          "/static/js/bundle.js",
-          "/static",
-          "/static/",
-          "/static/js",
-          "/static/js/S",
           "/static/js/main.be293e38.js",
           "/static/js/index.js",
           "/static/js/App.js",
@@ -23,9 +18,12 @@ this.addEventListener("install", (event) => {
           "/index.html",
           "/index",
           "/",
-          "main--lively-jelly-1f692c.netlify.app"
+          "../src/index.js",
         ])
-      ).then((data)=>{console.log(data);})
+      )
+      .then((data) => {
+        console.log(data);
+      })
       .catch((error) => console.log("Catch Store  Faild", error))
   );
 });
@@ -36,10 +34,12 @@ this.addEventListener("fetch", (event) => {
   if (!navigator.onLine) {
     event.respondWith(
       caches.match(event.request).then((res) => {
-        if (res){ return res}
-        const rerander =event.request.clone();
+        if (res) {
+          return res;
+        }
+        const rerander = event.request.clone();
         console.log(rerander);
-        fetch(rerander)
+        fetch(rerander);
       })
     );
   }
