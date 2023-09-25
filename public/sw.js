@@ -10,15 +10,8 @@ this.addEventListener("install", (event) => {
       .then((cache) =>
         cache.addAll([
           "/static/js/main.be293e38.js",
-          "/static/js/index.js",
-          "/static/js/App.js",
           "/static/css/main.300b1910.css",
-          "/static/css/index.css",
-          "/ogo192.png",
           "/index.html",
-          "/index",
-          "/",
-          "../src/index.js",
         ])
       )
       .then((data) => {
